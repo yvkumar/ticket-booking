@@ -6,13 +6,13 @@ import './Movie.css';
 export default class Movie extends Component {
   componentDidUpdate() {
     if(this.props.movie.isActive) {
-      this.animateDayPickerSize();
+      this.animateSeatselectionsize();
     }
   }
 
   componentWillUpdate() {
     if(!this.props.movie.isActive) {
-      this.animateDaypickerSize();
+      this.animateSeatselectionSize();
     }
   }
 
